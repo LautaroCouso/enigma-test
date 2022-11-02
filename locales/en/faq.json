@@ -1,0 +1,21 @@
+{
+    "title": "FAQs",
+    "section1_title": "What is the ERC-721 Token standard?",
+    "section1_description": "ERC-721 is an Ethereum based Token standard that allows the digital representation of unique collectibles in the form of NFTs. This non-fungible Token creates intrinsic asset value for your unique collectibles that can be sold.",
+    "section2_title": "What is minting an NFT?",
+    "section2_description": "The process of creating digitally represented unique assets into NFTs.",
+    "section3_title": "Can I create an NFT without putting it on sale?",
+    "section3_description": "As this site is a curated one, not everyone can upload their NFTs but you still are able to buy already minted NFTs and resell them if you want to.",
+    "section4_title": "Can I change the price of an already created NFT?",
+    "section4_description": "Yes, you can change the price of your NFT at any time with the signature through your integrated wallet if you are the owner of this NFT.",
+    "section5_title": "Can I gift or send a collectible to someone?",
+    "section5_description": "Yes, you can send or gift your NFT to anyone just by clicking \"Transfer\" button with a correct wallet address of the person you want to send the NFT to.",
+    "section6_title": "What does \"burning a Token\" mean?",
+    "section6_description": "The ERC-721 standard also allows to destroy the Tokens. This is known as burning.",
+    "section7_title": "What is unlockable Tokens?",
+    "section7_description": "As a content creator, you can add unlockable content to your collectibles, that can be visible only after the transfer of ownership. This supports artists to include high resolution files, videos, secret messages, etc.",
+    "section8_title": "How does the royalty work?",
+    "section8_description": "When the user creates a collectible the user can set a certain percentage as royalty for secondary sales. This allows the creators to earn revenue for each transaction of their NFTs.",
+    "section9_title": "Can I report an artwork or collectible?",
+    "section9_description": "Yes, you can report a collectible if it represents the same asset as yours, or if the NFT causes any other discomfort."
+}

@@ -1,0 +1,21 @@
+{
+    "title": "FAQs",
+    "section1_title": "¿Que es un Token ERC-721?",
+    "section1_description": "ERC-721 es un Token estándar basado en la red Ethereum el cual ofrece la posibilidad de representación de coleccionables únicos en forma de NFTs. Este Token no fungible crea un valor intrínseco para tus coleccionables.",
+    "section2_title": "¿Que es el \"minteo\" o acuñación de un NFT?",
+    "section2_description": "El proceso de mintear o acuñar un NFT es la creación de un activo único representado digitalmente.",
+    "section3_title": "¿Puedo crear un NFT sin ponerlo a la venta?",
+    "section3_description": "Este site es curado, por lo tanto no cualquiera puede subir sus NFTs, sin embargo, puedes comprar NFTs que estan a la venta y venderlos de nuevo si es que así lo decides.",
+    "section4_title": "¿Puedo cambiar el precio de un NFT que ya esta creado?",
+    "section4_description": "Sí, una vez que eres el dueño del NFT, puedes ponerlo a la venta una vez más a cualquier precio.",
+    "section5_title": "¿Se puede enviar un NFT a alguien?",
+    "section5_description": "Sí, se puede enviar un NFT del cual seás dueño a otra billetera al tocar el botón de \"Transferir\" con la dirección de la billetera de la persona a la cual deseas enviárselo.",
+    "section6_title": "¿Que significa \"quemar\" un Token?",
+    "section6_description": "El Token estándar ERC-721 da la opción de destruir un Token, a esto se lo conoce como \"quemar\" un Token.",
+    "section7_title": "¿Que son los Tokens desbloqueables?",
+    "section7_description": "Como creador de contenido, uno le puede agregar nuevos elementos al NFT, los cuales solamente estarán disponibles para el comprador del NFT una vez que la transacción se realice. Esto anima a que el artista incluya archivos en alta resolución, videos u otros mensajes.",
+    "section8_title": "¿Como funcionan las regalías?",
+    "section8_description": "Cuando un artista crea un NFT, este puede decidir sobre el porcentaje de regalías que recibe de cada transacción secundaria que se realiza con el NFT. Esto permite que los artistas sigan recibiendo una parte de los ingresos por las transacciones secundarias de su NFT.",
+    "section9_title": "¿Se puede reportar un coleccionable?",
+    "section9_description": "Sí, se puede reportar un coleccionable si consideras que el mismo representa a un mismo NFT que ya tienes o mismo por cualquier incomodidad generada."
+}

@@ -1,0 +1,142 @@
+{
+  "howItWorks": "How it works",
+  "about": "About",
+  "login": "Log In",
+  "logout": "Logout",
+  "marketplace": "Marketplace",
+  "termsAndConditions": "Terms and conditions",
+  "privacyPolicy": "Privacy Policy",
+  "fieldError": "This field is required",
+  "validateValueError": "Please validate the value",
+  "days": "Days",
+  "hours": "Hours",
+  "minutes": "Min.",
+  "seconds": "Sec.",
+  "charCount": "Count",
+  "validations": {
+    "invalidValue": "Invalid value",
+    "noPositive": "Value must be bigger than 0",
+    "isRequired": "This field is required",
+    "valueError": "Please, verify value",
+    "fileSize": "The file exceeds the permitted size",
+    "fileFormat": "Invalid file format",
+    "maxValue": "Maximum allowed value: {{value}}",
+    "minValue": "Minimum allowed value: {{value}}",
+    "maxLength": "Maximum allowed characters: {{value}}",
+    "notInteger": "The value must be an integer",
+    "minBidValue": "Bid must be greater than 1% of current bid",
+    "invalidAddress": "The value entered must be a valid address"
+  },
+  "create": "Create",
+  "profile": "Profile",
+  "settings": "Settings",
+  "collectibles": "Collectibles",
+  "seeMoreButton": "See more",
+  "stepStatus": {
+    "TODO": "Pending",
+    "IN_PROGRESS": "In progress...",
+    "DONE": "Done"
+  },
+  "search": {
+    "placeholder": "Find NFTs, Creators...",
+    "seeMoreButton": "See More NFTs",
+    "loading": "Loading...",
+    "emptyResults": "Sorry, no matches found"
+  },
+  "connectWallet": "Connect wallet",
+  "disconnectWallet": "Disconnect",
+  "of": "of",
+  "instantPrice": "Instant price",
+  "mintedTime": "Minted at:",
+  "auctionSale": {
+    "auctionStarted": "Auction started",
+    "auctionNotStarted": "Auction not started",
+    "auctionFinished": "Auction finished"
+  },
+  "freePrice": "Free",
+  "copies": "{{value}} copies",
+  "followers": "Followers",
+  "button": {
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "continue": "Continue"
+  },
+  "favs": {
+    "email": {
+      "subject": "Check out this NFT at Enigma.art!",
+      "body": "Found this NFT at Enigma: {{url}}"
+    }
+  },
+  "errorPage": {
+    "button": "go back to dashboard",
+    "404": {
+      "title": "The page you are looking for is not here",
+      "text": "You either tried some shady route or you came here by mistake. Whichever it is, try using navigation"
+    },
+    "500": {
+      "title": "Internal server error"
+    },
+    "payment": {
+      "success": "Thank you!",
+      "title": "Your payment was processed successfully",
+      "subtitle": "Your payment was successfully and securely completed.",
+      "error": "¡Ups!",
+      "errorTitle": "The payment was canceled or declined.",
+      "errorSubtitle": "If you think there is a problem, please contact us.",
+      "pending": "Thank you!",
+      "pendingTitle": "The payment is in process",
+      "pendingSubtitle": "",
+      "default": "Done",
+      "defaultTitle": "The payment process has finished",
+      "defaultSubtitle": "You can close this window now"
+    }
+  },
+  "share": {
+    "label": "Share",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "whatsapp": "Whatsapp",
+    "telegram": "Telegram",
+    "email": "Email",
+    "copyLink": "Copy Link"
+  },
+  "aboutUs": {
+    "title": "We offer unique solutions to musical and artistic projects in Latin America to develop and enhance digital communities through the technologies proposed by the web3.",
+    "subtitle": "We love music and art.",
+    "subtitle2": "And create their future.",
+    "text": "We are the first NFT platform seeking to strengthen and reconfigure the bond between artists and their fans through original works in new formats, unforgettable experiences and collaborative projects.",
+    "items": {
+      "title": "A universe without limits",
+      "item1": "We want to take advantage of blockchain technology in its full spectrum, so we develop unique NFTs that go beyond audio and provide interactivity, such as the mixer, generate unique works and collections with visual artists, develop and sell royalties from projects with Fractional with the aim of generating unique experiences between the artist and their audiences.",
+      "item2": "A single piece includes unpublished content in multiple formats, with a unique and inviolable certification of ownership and authenticity.",
+      "item3": "Together with musicians, artists and their audiences, we discovered the enormous potential of decentralized solutions: NFTs, Polygon and the permanent evolution of smart contracts on the Web3.",
+      "item4": "Digital art assets can also be a ticket to an exclusive face-to-face experience.",
+      "item5": "It is also an opportunity for musicians and artists to share with their fans the economic benefits of their work, with a market value of exponential projection.",
+      "item6": "The future of music lies in an ever-stronger connection between new artists and their communities. Limited edition songs allow to generate much more artistic and economic value thar can be shared between musicians and fans."
+    },
+    "more": {
+      "text": "Want to know what the web3 world for artists is all about?",
+      "button": "Read more"
+    },
+    "partners": {
+      "title": "Our team & our ecosystem",
+      "text": "We are supported by relevant references of the entrepreneurial ecosystem of the region. A challenge to continue innovating and disseminating the enormous artistic talent of Latin America.",
+      "subtitle": "Founding Partners"
+    },
+    "investors": {
+      "title": "Institutional Seed investors",
+      "subtitle": "Strategic alliance",
+      "text": "Ripio, pioneer startup in the Latin American crypto ecosystem."
+    },
+    "team": {
+      "title": "The Team"
+    },
+    "borders": {
+      "title": "Projection without frontiers",
+      "text": "We were chosen by Acelerar España as one of the most innovative startups in the market, with the objective of deepening the initial phase of internationalization.",
+      "question": "Why are we a reference in the crypto world and the entrepreneurial ecosystem?"
+    }
+  },
+  "userUnknown": "Unknown",
+  "switchNetwork": "Switch"
+}

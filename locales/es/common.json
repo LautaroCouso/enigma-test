@@ -1,0 +1,142 @@
+{
+  "howItWorks": "Cómo funciona",
+  "about": "Acerca de",
+  "login": "Ingresar",
+  "logout": "Salir",
+  "marketplace": "Marketplace",
+  "termsAndConditions": "Términos y Condiciones",
+  "privacyPolicy": "Políticas de Privacidad",
+  "fieldError": "Este campo es requerido",
+  "validateValueError": "Please validate the value",
+  "days": "Días",
+  "hours": "Horas",
+  "minutes": "Min.",
+  "seconds": "Seg.",
+  "charCount": "Conteo",
+  "validations": {
+    "invalidValue": "El valor es inválido",
+    "noPositive": "El valor debe ser mayor a 0",
+    "isRequired": "Este campo es requerido",
+    "valueError": "Por favor verifique el valor",
+    "fileSize": "El peso debe ser menor a 120mb",
+    "fileFormat": "El formato es inválido",
+    "maxValue": "Máximo valor permitido: {{value}}",
+    "minValue": "Mínimo valor permitido: {{value}}",
+    "maxLength": "Maximo cantidad de caracteres permitida: {{value}}",
+    "notInteger": "El valor debe ser un número entero",
+    "minBidValue": "La oferta debe ser mayor al 1% de la oferta actual",
+    "invalidAddress": "El valor ingresado debe ser una dirección válida"
+  },
+  "create": "Crear NFT",
+  "profile": "Perfil",
+  "settings": "Ajustes",
+  "collectibles": "Coleccionables",
+  "seeMoreButton": "Ver más",
+  "stepStatus": {
+    "TODO": "Pendiente",
+    "IN_PROGRESS": "En progreso...",
+    "DONE": "Terminado"
+  },
+  "search": {
+    "placeholder": "Buscar NFTs, Creadores...",
+    "seeMoreButton": "Ver más NFTs",
+    "loading": "Cargando...",
+    "emptyResults": "Lo sentimos, no se han encontrado resultados"
+  },
+  "connectWallet": "Connectar billetera",
+  "disconnectWallet": "Desconectar",
+  "of": "de",
+  "instantPrice": "Precio instantáneo",
+  "mintedTime": "Minteado hace:",
+  "auctionSale": {
+    "auctionStarted": "Subasta iniciada",
+    "auctionNotStarted": "Subasta no iniciada",
+    "auctionFinished": "Subasta finalizada"
+  },
+  "freePrice": "Gratis",
+  "copies": "{{value}} copias",
+  "followers": "Seguidores",
+  "button": {
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "continue": "Continue"
+  },
+  "favs": {
+    "email": {
+      "subject": "Mira este NFT en Enigma.art!",
+      "body": "Encontre este NFT en Enigma: {{url}}"
+    }
+  },
+  "errorPage": {
+    "button": "Regresar al dashboard",
+    "404": {
+      "title": "Ups! La página que estás buscando no está aquí",
+      "text": "O bien has intentado una ruta sospechosa o has llegado aquí por error. Sea lo que sea, intenta usar la navegación"
+    },
+    "500": {
+      "title": "Error interno del servidor"
+    },
+    "payment": {
+      "success": "Gracias!",
+      "title": "Su pago fue procesado correctamente",
+      "subtitle": "Su pago sea ha realizado con éxito y de forma segura.",
+      "error": "¡Ups!",
+      "errorTitle": "El pago fue cancelado o rechazado.",
+      "errorSubtitle": "Si cree que hay un problema, ponte en contacto con nosotros.",
+      "pending": "Gracias!",
+      "pendingTitle": "El pago está en proceso",
+      "pendingSubtitle": "",
+      "default": "",
+      "defaultTitle": "El proceso de pago ha finalizado",
+      "defaultSubtitle": "Ya puede cerrar esta ventana"
+    }
+  },
+  "share": {
+    "label": "Compartir",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "whatsapp": "Whatsapp",
+    "telegram": "Telegram",
+    "email": "E-Mail",
+    "copyLink": "Copiar Link"
+  },
+  "aboutUs": {
+    "title": "Ofrecemos soluciones únicas a los proyectos musicales y artísticos de hispanoamérica para desarrollar y potencial las comunidades digitales a través de las tecnologías que propone la web3",
+    "subtitle": "Amamos la música y el arte.",
+    "subtitle2": "y creamos su futuro.",
+    "text": "Somos la primera plataforma de NFTs en la búsqueda de fortalecer y reconfigurar el vínculo entre artistxs y sus fans a través de obras originales en nuevos formatos, experiencias inolvidables y proyectos colaborativos.",
+    "items": {
+      "title": "Un universo sin límites",
+      "item1": "Queremos aprovechar la tecnología blockchain en todo su espectro, por eso desarrollamos NFTs únicos que van más allá del  audio y que aportan interactividad, como el mixer, generar obras y colecciones únicas con artistas visuales, desarrollar y vender regalías de los proyectos con Fractional con la búsqueda de generar experiencias únicas entre el artista y sus audiencias.",
+      "item2": "Una sola pieza incluye contenido inédito en múltiples formatos, con una certificación de propiedad y autenticidad única e inviolable.",
+      "item3": "Junto con los músicos, artistas y su público, descubrimos el enorme potencial de las soluciones descentralizadas: NFTs, Polygon y la permanente evolución de los contratos inteligentes en la Web3.",
+      "item4": "Los activos artísticos digitales pueden también ser un boleto a una experiencia presencial exclusiva.",
+      "item5": "Se trata además de una oportunidad para que músicos y artistas compartan con sus fanáticos los beneficios económicos de su obra, con un valor de mercado de proyección exponencial.",
+      "item6": "El futuro de la música está en una conexión cada vez más fuerte entre los nuevos artistas y sus comunidades. Las canciones de edición limitada permiten generar mucho más valor artístico y económico compartido entre músicos y fans."
+    },
+    "more": {
+      "text": "Quieres saber de qué se trata el mundo web3 para artistxs",
+      "button": "Leer más"
+    },
+    "partners": {
+      "title": "Nuestro equipo y nuestro ecosistema",
+      "text": "Estamos acompañados por relevantes referentes del ecosistema emprendedor de la región. Un desafío para seguir innovando y difundiendo el enorme talento artístico de Latinoamérica.",
+      "subtitle": "Socios Fundadores"
+    },
+    "investors": {
+      "title": "Seed investors institucionales",
+      "subtitle": "Alianza estratégica",
+      "text": "Ripio, startup pionera en el ecosistema cripto de América Latina."
+    },
+    "team": {
+      "title": "Equipo"
+    },
+    "borders": {
+      "title": "Proyección sin fronteras",
+      "text": "Fuimos elegidos por Acelerar España como una de las startups más innovadoras del mercado, con el objetivo de profundizar la fase inicial de internacionalización.",
+      "question": "¿Por qué somos una referencia en el mundo cripto y el ecosistema emprendedor?"
+    }
+  },
+  "userUnknown": "Desconocido",
+  "switchNetwork": "Cambiar"
+}
