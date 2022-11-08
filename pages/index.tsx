@@ -1,71 +1,193 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Box } from '@mui/material';
+import { Label, Button } from '../src/components';
+import { NextPage } from 'next';
+import useTranslation from 'next-translate/useTranslation';
+import Image from 'next/image';
 
-export default function Home() {
+const sxStyles = {
+  mainContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+    padding: { xs: '30px', lg: '100px 150px' },
+    background:
+      'linear-gradient(180deg, rgba(145, 95, 225, 0.4) 0%, rgba(255, 255, 255, 0.4) 18.87%)',
+  },
+  titleContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: { xs: '30px', lg: '100px' },
+  },
+  title: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    whiteSpace: 'normal',
+    fontSize: { xs: '40px', xl: '60px' },
+    lineHeight: { xs: '50px', xl: '80px' },
+    textAlign: 'center',
+  },
+  sectionContainer: {
+    display: 'flex',
+    flexDirection: { xs: 'column', md: 'row' },
+    justifyContent: 'space-between',
+    width: { xs: '100%', md: '70%' },
+    marginBottom: '50px',
+    alignItems: 'center',
+  },
+  sectionreverseContainer: {
+    display: 'flex',
+    flexDirection: { xs: 'column-reverse', md: 'row' },
+    justifyContent: 'space-between',
+    width: { xs: '100%', md: '70%' },
+    marginBottom: '50px',
+    alignItems: 'center',
+  },
+  textContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: { xs: 'center', md: 'flex-start' },
+    width: { xs: '100%', md: '50%' },
+  },
+  sectionTitle: {
+    display: 'flex',
+    alignItems: { xs: 'center', md: 'flex-start' },
+    justifyContent: { xs: 'center', md: 'flex-start' },
+    whiteSpace: 'normal',
+    marginBottom: '20px',
+    fontSize: { xs: '28px', xl: '48px' },
+    lineHeight: { xs: '35px', xl: '56px' },
+    textAlign: { xs: 'center', md: 'left' },
+  },
+  sectionText: {
+    whiteSpace: 'normal',
+    width: { xs: '90%', sm: '80%', md: '100%' },
+    textAlign: { xs: 'center', md: 'left' },
+    fontSize: { xs: '15px', lg: '18px', xl: '20px' },
+    lineHeight: { xs: '24px', lg: '26px', xl: '28px' },
+    fontWeight: '500',
+  },
+
+  imgContainer: {
+    padding: '20px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: { xs: '80%', sm: '40%', md: '45%' },
+  },
+};
+
+const HowToCreate: NextPage = () => {
+  const { t } = useTranslation();
+
+  const onLogin = () => {
+    console.log('Login!');
+  };
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Enigma Test App</title>
-        <meta name="description" content="Enigma test application" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
+    <Box sx={sxStyles.mainContainer}>
+      <Box sx={sxStyles.titleContainer}>
+        <Label variant="h3" text={t('createworks:title')} sx={sxStyles.title} />
+        <Label
+          variant="h3"
+          text={t('createworks:title2')}
+          sx={sxStyles.title}
+        />
+      </Box>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Box sx={sxStyles.sectionreverseContainer}>
+        <Box sx={sxStyles.textContainer}>
+          <Label
+            variant="h3"
+            text={t('createworks:section1_title')}
+            sx={sxStyles.sectionTitle}
+          />
+          <Label
+            variant="h6"
+            text={t('createworks:section1_text1')}
+            sx={sxStyles.sectionText}
+          />
+          <Label
+            variant="h6"
+            text={t('createworks:section1_text2')}
+            sx={sxStyles.sectionText}
+          />
+        </Box>
+        <Box sx={sxStyles.imgContainer}>
+          <Image
+            alt="createworks-1"
+            src="/images/createworks/createworks-1.png"
+            width={356}
+            height={490}
+          />
+        </Box>
+      </Box>
+      <Box sx={sxStyles.sectionContainer}>
+        <Box sx={sxStyles.imgContainer}>
+          <Image
+            alt="createworks-2"
+            src="/images/createworks/createworks-2.png"
+            width={400}
+            height={304}
+          />
+        </Box>
+        <Box sx={sxStyles.textContainer}>
+          <Label
+            variant="h3"
+            text={t('createworks:section2_title')}
+            sx={sxStyles.sectionTitle}
+          />
+          <Label
+            variant="h6"
+            text={t('createworks:section2_text2')}
+            sx={sxStyles.sectionText}
+          />
+          <Label
+            variant="h6"
+            text={t('createworks:section2_text1')}
+            sx={sxStyles.sectionText}
+          />
+        </Box>
+      </Box>
+      <Box sx={sxStyles.sectionreverseContainer}>
+        <Box sx={sxStyles.textContainer}>
+          <Label
+            variant="h3"
+            text={t('createworks:section3_title')}
+            sx={sxStyles.sectionTitle}
+          />
+          <Label
+            variant="h6"
+            text={t('createworks:section3_text')}
+            sx={sxStyles.sectionText}
+          />
+        </Box>
+        <Box sx={sxStyles.imgContainer}>
+          <Image
+            alt="createworks-3"
+            src="/images/createworks/createworks-3.png"
+            width={329}
+            height={287}
+          />
+        </Box>
+      </Box>
+      <Button
+        onClick={onLogin}
+        name="submit-button"
+        palette="primary"
+        type="submit"
+        sx={{
+          width: { xs: '100%', sm: '60%', md: '50%', xl: '30%' },
+          marginBottom: '20px',
+        }}
+      >
+        {t('createworks:button')}
+      </Button>
+    </Box>
+  );
+};
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default HowToCreate;
