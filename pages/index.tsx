@@ -1,8 +1,9 @@
-import { Box } from '@mui/material';
+import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import { Label, Button } from '../src/components';
 import { NextPage } from 'next';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
+import ImageSlider from '../src/components/ImageSlider';
 
 const sxStyles = {
   mainContainer: {
@@ -38,7 +39,7 @@ const sxStyles = {
     marginBottom: '50px',
     alignItems: 'center',
   },
-  sectionreverseContainer: {
+  sectionReverseContainer: {
     display: 'flex',
     flexDirection: { xs: 'column-reverse', md: 'row' },
     justifyContent: 'space-between',
@@ -78,6 +79,21 @@ const sxStyles = {
     justifyContent: 'center',
     width: { xs: '80%', sm: '40%', md: '45%' },
   },
+  boldTitle: {
+    fontWeight: '800',
+    fontStyle: 'italic',
+  },
+  sectionMainTitle: {
+    fontSize: { xs: '30px', lg: '40px' },
+    lineHeight: { xs: '38px', lg: '48px' },
+    maxWidth: { xs: '100%', lg: 385 },
+    textAlign: { xs: 'center', lg: 'left' },
+  },
+  sectionMainBody: {
+    fontSize: { xs: '30px', md: '18px' },
+    maxWidth: { xs: '100%', md: 604, lg: 302 },
+    textAlign: { xs: 'center', lg: 'left' },
+  },
 };
 
 const HowToCreate: NextPage = () => {
@@ -86,6 +102,27 @@ const HowToCreate: NextPage = () => {
   const onLogin = () => {
     console.log('Login!');
   };
+
+  const sliderData = [
+    {
+      url: 'https://assetsv2.enigma.art/home/slider-4-opensea.jpg',
+      alt: 'Ibiza Podcast',
+      id: 1,
+      href: 'https://open.spotify.com/episode/2FzMj5n18CMGAciolNYnJZ?si=2HsZ7pRNRF-qZyle5z3jxg&nd=1',
+    },
+    {
+      url: 'https://assetsv2.enigma.art/home/crea_vende_enigma.jpg',
+      alt: 'Enigma Create',
+      id: 2,
+      href: 'https://enigma.art/how-to-create',
+    },
+    {
+      url: 'https://assetsv2.enigma.art/home/banner_muchacho.jpg',
+      alt: 'Muchacho NTF',
+      id: 3,
+      href: 'https://enigma.art/detail/811908d0-75ea-46b8-8b87-ff122793ddf0',
+    },
+  ];
 
   return (
     <Box sx={sxStyles.mainContainer}>
@@ -97,8 +134,31 @@ const HowToCreate: NextPage = () => {
           sx={sxStyles.title}
         />
       </Box>
-
-      <Box sx={sxStyles.sectionreverseContainer}>
+      <Grid container spacing={{ xs: 4, lg: 0 }}>
+        <Grid item xs={12} lg={5} order={{ xs: 2, lg: 1 }}>
+          <Stack spacing={5} alignItems={{ xs: 'center', lg: 'flex-start' }}>
+            <Typography variant={'h1'} sx={sxStyles.sectionMainTitle}>
+              {'Enigma '}
+              <Box component={'span'} sx={sxStyles.boldTitle}>
+                {'Web3.0 '}
+              </Box>
+              creative community
+            </Typography>
+            <Typography variant={'body1'} sx={sxStyles.sectionMainBody}>
+              We are a web3 platform for artists and creators looking to
+              distribute their content and works in new formats (NFTs), promote
+              their communities and monetize without intermediaries.
+            </Typography>
+            <Button palette="primary">
+              {t('createworks:section1_button')}
+            </Button>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} lg={7} order={{ xs: 1, lg: 2 }}>
+          <ImageSlider data={sliderData} />
+        </Grid>
+      </Grid>
+      <Box sx={sxStyles.sectionReverseContainer}>
         <Box sx={sxStyles.textContainer}>
           <Label
             variant="h3"
@@ -152,7 +212,7 @@ const HowToCreate: NextPage = () => {
           />
         </Box>
       </Box>
-      <Box sx={sxStyles.sectionreverseContainer}>
+      <Box sx={sxStyles.sectionReverseContainer}>
         <Box sx={sxStyles.textContainer}>
           <Label
             variant="h3"
