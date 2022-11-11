@@ -16,6 +16,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.11",
+    "@next/font": "^13.0.2",
     "add": "^2.0.6",
     "next": "13.0.0",
     "next-translate": "1.6.0",

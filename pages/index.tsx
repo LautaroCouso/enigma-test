@@ -1,9 +1,10 @@
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import { Label, Button } from '../src/components';
-import { NextPage } from 'next';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import ImageSlider from '../src/components/ImageSlider';
+import { CardContents, CardInfo } from '../src/types';
+import ArtCard from '../src/components/ArtCard';
 
 const sxStyles = {
   mainContainer: {
@@ -94,9 +95,26 @@ const sxStyles = {
     maxWidth: { xs: '100%', md: 604, lg: 302 },
     textAlign: { xs: 'center', lg: 'left' },
   },
+  altSectionTitle: {
+    whiteSpace: 'normal',
+    fontSize: { xs: '40px', xl: '60px' },
+    lineHeight: { xs: '50px', xl: '80px' },
+    textAlign: 'left',
+  },
+  altSectionContainer: {
+    display: 'flex',
+    width: '100%',
+    height: 'auto',
+    marginBottom: '40px',
+  },
 };
 
-const HowToCreate: NextPage = () => {
+interface Props {
+  data: CardContents;
+}
+
+const HowToCreate = (props: Props) => {
+  const { data } = props;
   const { t } = useTranslation();
 
   const onLogin = () => {
@@ -121,6 +139,62 @@ const HowToCreate: NextPage = () => {
       alt: 'Muchacho NTF',
       id: 3,
       href: 'https://enigma.art/detail/811908d0-75ea-46b8-8b87-ff122793ddf0',
+    },
+  ];
+
+  const CardsData: Array<CardInfo> = [
+    {
+      fileType: 'video',
+      file: 'https://assetsv2.enigma.art/nfts/video/e840ce85-e2b3-4ed7-a3d9-bb5370a910a1.mp4',
+      cardTitle: 'Entidad Atemporal 3 / 5 de 5',
+      author: 'VicenteGrondona',
+      currency: 'https://enigma.art/icons/ETH.svg',
+      price: '0.2',
+      currencyType: 'ETH',
+      id: 1,
+      authorAvatar:
+        'https://assetsv2.enigma.art/users/a68998d0-3578-4520-986a-c69cd5874a01/photo/33c1e32d-7f94-4474-ac0d-5f0883181de3.jpg',
+      link: 'https://enigma.art/en/detail/ff3c271a-cf0c-4596-95e2-5e178b51b36c',
+    },
+    {
+      fileType: 'image',
+      file: 'https://enigma.art/_next/image?url=https%3A%2F%2Fassetsv2.enigma.art%2Fnfts%2Fimage%2F81117fda-6d58-4b8d-9703-a13427065adc.jpeg&w=1200&q=50',
+      cardTitle: 'Matilde / 4 of 5',
+      author: 'LuluGueron',
+      currency: 'https://enigma.art/icons/ETH.svg',
+      price: '0.06',
+      currencyType: 'ETH',
+      id: 2,
+      authorAvatar:
+        'https://assetsv2.enigma.art/users/f5eb4235-be0e-4d50-873d-dcd4fab613e2/photo/d77cf1de-21f9-43d3-8c79-a277141ff9e6.jpg',
+      link: 'https://enigma.art/en/detail/37cebfa9-c631-4b1d-8205-9c83279b97a6',
+    },
+    {
+      fileType: 'image',
+      file: 'https://enigma.art/_next/image?url=https%3A%2F%2Fassetsv2.enigma.art%2Fnfts%2Fimage%2F39f4f750-61f6-4157-9f1f-cd96ca3727f3.jpg&w=1080&q=50',
+      cardTitle: 'SUGAR RUSH / 1 of 1',
+      author: 'kioscodeartistas',
+      currency: 'https://enigma.art/icons/ETH.svg',
+      price: '0.075',
+      currencyType: 'ETH',
+      id: 3,
+      authorAvatar:
+        'https://assetsv2.enigma.art/users/084dbb1c-6000-4ea2-a024-550b30184c60/photo/6a858b70-ef22-4a2d-9650-83fd5d01d244.png',
+      link: 'https://enigma.art/en/detail/85707699-06f8-455f-b798-02a62c0080ba',
+    },
+    {
+      fileType: 'video',
+      file: 'https://assetsv2.enigma.art/nfts/video/7e24802a-1e80-4d46-87e1-79256158b188.mp4',
+      cardTitle:
+        'Mariana Michi & Tweety Gonzalez - Muchacho | Fractional / 7 of 10',
+      author: 'MarianaMichi&TweetyGonzalez',
+      currency: 'https://enigma.art/icons/USD.svg',
+      price: '25',
+      currencyType: 'USD',
+      id: 4,
+      authorAvatar:
+        'https://assetsv2.enigma.art/users/f5eb4235-be0e-4d50-873d-dcd4fab613e2/photo/d77cf1de-21f9-43d3-8c79-a277141ff9e6.jpg',
+      link: 'https://enigma.art/en/detail/811908d0-75ea-46b8-8b87-ff122793ddf0',
     },
   ];
 
@@ -158,6 +232,32 @@ const HowToCreate: NextPage = () => {
           <ImageSlider data={sliderData} />
         </Grid>
       </Grid>
+      <Box sx={sxStyles.altSectionContainer}>
+        <Typography variant={'h3'} sx={sxStyles.title}>
+          Trending Drops.
+        </Typography>
+      </Box>
+      <Box sx={{ maxWidth: '1290px' }}>
+        <Grid container spacing={4} justifyContent={'center'}>
+          {CardsData.map((item: CardInfo) => {
+            return (
+              <Grid item key={item.id} xs={12} md={6} lg={4} xl={3}>
+                <ArtCard
+                  fileType={item.fileType}
+                  file={item.file}
+                  cardTitle={item.cardTitle}
+                  author={item.author}
+                  currency={item.currency}
+                  price={item.price}
+                  currencyType={item.currencyType}
+                  authorAvatar={item.authorAvatar}
+                  link={item.link}
+                />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
       <Box sx={sxStyles.sectionReverseContainer}>
         <Box sx={sxStyles.textContainer}>
           <Label

@@ -45,18 +45,6 @@ const ImageSlider = (props: Props) => {
         );
       })}
     </Swiper>
-    /*<Slider {...settings}>
-      {data.map((item: Content) => {
-        return (
-          <div
-            key={item.id}
-            style={{ backgroundColor: 'green', height: '400', width: '400' }}
-          >
-            {/!*          <SliderImage url={item.url} alt={item.alt} />*!/}
-          </div>
-        );
-      })}
-    </Slider>*/
   );
 };
 
