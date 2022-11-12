@@ -38,3 +38,7 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: #8d8d8d;
 }
+
+.swiper-pagination-bullet-active {
+    background-color: #000!important;
+}

@@ -13,3 +13,13 @@ export type CardInfo = {
   authorAvatar: string;
   link: string;
 };
+export type topArtistCardContents = Array<topArtistCardInfo>;
+export type topArtistCardInfo = {
+  media: string;
+  avatar: string;
+  artist: string;
+  description: string;
+  followers: number;
+  link: string;
+  id: number;
+};

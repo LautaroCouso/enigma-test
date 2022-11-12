@@ -14,15 +14,6 @@ interface Props {
 
 const ImageSlider = (props: Props) => {
   const { data } = props;
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-  };
   return (
     <Swiper
       style={{ height: '100%', width: '100%' }}
